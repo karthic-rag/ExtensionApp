@@ -43,6 +43,7 @@
   @apply hidden;
 }
 
-body {
+body,
+html #root {
   @apply h-full bg-linear-180 from-0% from-[#EBF2FC] to-100% to-[#EEF8F9] dark:bg-linear-180 dark:from-0% dark:from-[#040918] dark:to-100% dark:to-[#091540];
 }
