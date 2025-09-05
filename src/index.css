@@ -43,8 +43,11 @@
   @apply hidden;
 }
 
-html,
-body #root {
-  @apply h-full m-0 bg-gradient-to-b from-[#EBF2FC] to-[#EEF8F9] 
+html body #root {
+  @apply h-full m-0;
+}
+
+html body {
+  @apply bg-gradient-to-b from-[#EBF2FC] to-[#EEF8F9] 
          dark:from-[#040918] dark:to-[#091540];
 }
