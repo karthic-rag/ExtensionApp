@@ -50,21 +50,3 @@ body,
   min-height: 100%;
   margin: 0;
 }
-
-/* Light gradient */
-html {
-  @apply bg-gradient-to-b from-[#EBF2FC] to-[#EEF8F9];
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Dark gradient */
-html.dark {
-  @apply bg-gradient-to-b from-[#040918] to-[#091540];
-}
-
-/* Body should not override */
-body {
-  background: transparent;
-}
