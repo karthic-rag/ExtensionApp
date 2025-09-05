@@ -17,11 +17,7 @@ const App = () => {
     }
   }, [theme.isDark]);
   return (
-    <div
-      className="min-w-screen min-h-screen bg-linear-180 from-0% from-[#EBF2FC] to-100% to-[#EEF8F9] 
-      dark:bg-linear-180 dark:from-0% dark:from-[#040918] dark:to-100% dark:to-[#091540]
-      font-Noto p-4"
-    >
+    <div className="min-h-screen font-Noto p-4">
       <Header />
       <NavBar />
       <Routes>
