@@ -51,10 +51,6 @@ body,
   margin: 0;
 }
 
-html.dark {
+body {
   background-image: linear-gradient(180deg, #040918 0%, #091540 100%);
-}
-
-html.light {
-  background-image: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
 }
