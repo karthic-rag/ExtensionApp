@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-Noto: "Noto Sans", sans-serif;
+  --color-dark-900: hsl(227, 75%, 14%);
+  --color-dark-800: hsl(226, 25%, 17%);
+  --color-dark-700: hsl(225, 23%, 24%);
+  --color-dark-600: hsl(226, 11%, 37%);
+  --color-light-300: hsl(0, 0%, 78%);
+  --color-light-blue: hsl(217, 61%, 90%);
+  --color-light-100: hsl(0, 0%, 93%);
+  --color-light-white: hsl(200, 60%, 99%);
+  --color-dark-red: hsl(3, 71%, 56%);
+  --color-light-red: hsl(3, 77%, 44%);
+}
+
+.active button {
+  @apply bg-dark-red dark:text-dark-900 text-light-white;
+}
+
+@layer components {
+  .btn-light {
+    @apply bg-light-white hover:bg-light-blue border-2 border-light-blue rounded-3xl px-4 py-2 text-dark-900 font-medium;
+  }
+
+  .light-border {
+    @apply border-light-blue;
+  }
+
+  .light-card {
+    @apply bg-light-white border-2 border-light-blue;
+  }
+
+  .rm-btn {
+    @apply text-dark-900 border-2 border-light-blue hover:bg-light-red hover:text-light-white;
+  }
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}

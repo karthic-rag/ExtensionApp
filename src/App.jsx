@@ -1,0 +1,32 @@
+import React, { useContext } from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Active from "./pages/Active";
+import InActive from "./pages/InActive";
+import { ThemeContext } from "./context/ThemeContext";
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+
+const App = () => {
+  const theme = useContext(ThemeContext);
+
+  return (
+    <div className={theme.isDark ? "dark" : ""}>
+      <div
+        className="min-w-screen min-h-screen bg-linear-180 from-0% from-[#EBF2FC] to-100% to-[#EEF8F9] 
+      dark:bg-linear-180 dark:from-0% dark:from-[#040918] dark:to-100% dark:to-[#091540]
+      font-Noto p-4"
+      >
+        <Header />
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/active" element={<Active />} />
+          <Route path="/inactive" element={<InActive />} />
+        </Routes>
+      </div>
+    </div>
+  );
+};
+
+export default App;
