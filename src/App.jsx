@@ -12,8 +12,10 @@ const App = () => {
   useEffect(() => {
     if (theme.isDark) {
       document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
     } else {
       document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
     }
   }, [theme.isDark]);
   return (
