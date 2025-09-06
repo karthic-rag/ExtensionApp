@@ -45,15 +45,20 @@
 
 @layer base {
   html {
-    @apply bg-linear-180 from-[#EBF2FC] to-[#EEF8F9] dark:bg-linear-180 dark:from-[#040918] dark:to-[#091540];
+    @apply bg-linear-180 from-[#EBF2FC] to-[#EEF8F9] dark:from-[#040918] dark:to-[#091540];
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
   }
-  body {
-    @apply bg-linear-180 from-[#EBF2FC] to-[#EEF8F9] dark:bg-linear-180 dark:from-[#040918] dark:to-[#091540];
-  }
-}
 
-html,
-body {
-  min-height: 100%;
-  margin: 0;
+  body {
+    @apply bg-transparent;
+    min-height: 100%;
+    margin: 0;
+  }
+
+  #root {
+    min-height: 100%;
+  }
 }
